@@ -7,7 +7,7 @@
     <version>2.0.5</version>
     <name>sygna-bridge-util-j</name>
     <description>This sygna-bridge-util-j library is a Java version of Sygna Bridge SDK</description>
-    <url>https://github.com/CoolBitX-Technology/sygna-bridge-util-j</url>
+    <url>https://github.com/sygnaio/sygna-bridge-util-j</url>
     <licenses>
         <license>
             <name>The MIT License</name>
@@ -17,9 +17,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:https://github.com/CoolBitX-Technology/sygna-bridge-util-j.git</connection>
-        <developerConnection>scm:git:https://github.com/CoolBitX-Technology/sygna-bridge-util-j.git</developerConnection>
-        <url>https://github.com/CoolBitX-Technology/sygna-bridge-util-j/tree/master</url>
+        <connection>scm:git:https://github.com/sygnaio/sygna-bridge-util-j.git</connection>
+        <developerConnection>scm:git:https://github.com/sygnaio/sygna-bridge-util-j.git</developerConnection>
+        <url>https://github.com/sygnaio/sygna-bridge-util-j/tree/master</url>
     </scm>
     
     <developers>

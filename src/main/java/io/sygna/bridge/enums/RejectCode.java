@@ -1,4 +1,4 @@
-package com.coolbitx.sygna.bridge.enums;
+package io.sygna.bridge.enums;
 
 import com.google.gson.annotations.SerializedName;
 

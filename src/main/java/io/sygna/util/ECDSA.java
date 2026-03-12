@@ -1,4 +1,4 @@
-package com.coolbitx.sygna.util;
+package io.sygna.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

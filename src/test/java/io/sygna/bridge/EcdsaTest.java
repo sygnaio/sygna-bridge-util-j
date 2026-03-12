@@ -1,11 +1,11 @@
-package com.coolbitx.sygna.bridge;
+package io.sygna.bridge;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import com.coolbitx.sygna.util.ECDSA;
+import io.sygna.util.ECDSA;
 
 public class EcdsaTest {
 

@@ -1,4 +1,4 @@
-package com.coolbitx.sygna.bridge;
+package io.sygna.bridge;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

@@ -1,4 +1,4 @@
-package com.coolbitx.sygna.bridge.model;
+package io.sygna.bridge.model;
 
 public abstract class Field {
 

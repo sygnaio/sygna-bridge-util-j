@@ -5,12 +5,12 @@
  */
 package io.sygna.bridge.sample;
 
-import com.coolbitx.sygna.bridge.Crypto;
-import com.coolbitx.sygna.bridge.API;
-import com.coolbitx.sygna.bridge.enums.PermissionStatus;
-import com.coolbitx.sygna.bridge.enums.RejectCode;
-import com.coolbitx.sygna.bridge.model.Field;
-import com.coolbitx.sygna.util.StringUtil;
+import io.sygna.bridge.Crypto;
+import io.sygna.bridge.API;
+import io.sygna.bridge.enums.PermissionStatus;
+import io.sygna.bridge.enums.RejectCode;
+import io.sygna.bridge.model.Field;
+import io.sygna.util.StringUtil;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 

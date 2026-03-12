@@ -1,8 +1,8 @@
-package com.coolbitx.sygna.bridge;
+package io.sygna.bridge;
 
-import com.coolbitx.sygna.bridge.enums.PermissionStatus;
-import com.coolbitx.sygna.bridge.enums.RejectCode;
-import com.coolbitx.sygna.bridge.model.Field;
+import io.sygna.bridge.enums.PermissionStatus;
+import io.sygna.bridge.enums.RejectCode;
+import io.sygna.bridge.model.Field;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
