@@ -1,10 +1,10 @@
-package com.coolbitx.sygna.bridge;
+package io.sygna.bridge;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.coolbitx.sygna.util.Validator;
+import io.sygna.util.Validator;
 
 public class ValidatorTest {
     

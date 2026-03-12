@@ -1,4 +1,4 @@
-package com.coolbitx.sygna.util;
+package io.sygna.util;
 
 import java.math.BigInteger;
 import java.nio.ByteBuffer;

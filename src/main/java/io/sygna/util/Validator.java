@@ -1,4 +1,4 @@
-package com.coolbitx.sygna.util;
+package io.sygna.util;
 
 public class Validator {
 

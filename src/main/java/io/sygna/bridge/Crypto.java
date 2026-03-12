@@ -1,10 +1,10 @@
-package com.coolbitx.sygna.bridge;
+package io.sygna.bridge;
 
-import com.coolbitx.sygna.bridge.model.Field;
-import com.coolbitx.sygna.config.BridgeConfig;
-import com.coolbitx.sygna.util.ECDSA;
-import com.coolbitx.sygna.util.ECIES;
-import com.coolbitx.sygna.util.Validator;
+import io.sygna.bridge.model.Field;
+import io.sygna.config.BridgeConfig;
+import io.sygna.util.ECDSA;
+import io.sygna.util.ECIES;
+import io.sygna.util.Validator;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 

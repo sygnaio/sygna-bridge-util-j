@@ -1,10 +1,10 @@
-package com.coolbitx.sygna.bridge;
+package io.sygna.bridge;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.coolbitx.sygna.util.ECIES;
+import io.sygna.util.ECIES;
 
 public class EciesTest {
 

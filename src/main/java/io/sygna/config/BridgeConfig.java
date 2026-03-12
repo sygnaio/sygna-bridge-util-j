@@ -1,4 +1,4 @@
-package com.coolbitx.sygna.config;
+package io.sygna.config;
 
 public class BridgeConfig {
 

@@ -18,7 +18,7 @@ You also can import bridge util from [maven](https://mvnrepository.com/artifact/
 ## Package
 
 ```java
-import com.coolbitx.sygna.bridge.*;
+import io.sygna.bridge.*;
 ```
 
 ## Crypto
@@ -31,7 +31,7 @@ During the communication of VASPs, there are some private information that must 
 
 We're using [IVMS101 (interVASP Messaging Standard)](https://intervasp.org/) as our private information format.
 
-We also provide [IVMS101 Java Utility](https://github.com/CoolBitX-Technology/sygna-bridge-ivms-utils/tree/master/java) to construct data payload.
+We also provide [IVMS101 Java Utility](https://github.com/sygnaio/sygna-bridge-ivms-utils/tree/master/java) to construct data payload.
 
 ```java
 String sensitiveData = "{" +

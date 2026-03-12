@@ -1,9 +1,9 @@
-package com.coolbitx.sygna.bridge;
+package io.sygna.bridge;
 
-import com.coolbitx.sygna.bridge.model.Field;
-import com.coolbitx.sygna.config.BridgeConfig;
-import com.coolbitx.sygna.net.HttpClient;
-import com.coolbitx.sygna.util.StringUtil;
+import io.sygna.bridge.model.Field;
+import io.sygna.config.BridgeConfig;
+import io.sygna.net.HttpClient;
+import io.sygna.util.StringUtil;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
