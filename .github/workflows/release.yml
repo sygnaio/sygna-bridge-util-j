@@ -21,12 +21,20 @@ jobs:
           server-username: CENTRAL_USERNAME
           server-password: CENTRAL_PASSWORD
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
-          gpg-passphrase: GPG_PASSPHRASE
-
+          gpg-passphrase: MAVEN_GPG_PASSPHRASE # 告知 setup-java 去這個環境變數找密碼
+      # --- 新增這個驗證步驟 ---
+      - name: Verify GPG Key Import
+        run: |
+          echo "Checking imported secret keys..."
+          gpg --list-secret-keys --keyid-format LONG
+          echo "Checking key expiration..."
+          gpg --list-keys
+      # ------------------------
+        
       - name: Publish to Maven Central
         env:
           CENTRAL_USERNAME: ${{ secrets.CENTRAL_USERNAME }}
           CENTRAL_PASSWORD: ${{ secrets.CENTRAL_PASSWORD }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }} # 實際將 Secret 注入環境變數
         # 呼叫 pom.xml 中設定的 deploy profile 來執行打包與簽章
         run: mvn --batch-mode clean deploy -P deploy
