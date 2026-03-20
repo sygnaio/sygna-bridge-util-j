@@ -1,10 +1,9 @@
-name: Feature Branch
+name: Feature Branch CI
 
 on:
   push:
     branches-ignore:
       - 'master'
-
   pull_request:
     branches:
       - master
@@ -12,15 +11,24 @@ on:
 jobs:
   test:
     name: Unit Test
-    runs-on: ubuntu-18.04
+    # 升級 1：使用最新的 Ubuntu 環境 (目前為 24.04 或 22.04)
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      # 升級 2：Checkout 升級到 v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 升級 3：Setup Java 升級到 v4，必須指定 distribution，並開啟 maven 快取
       - name: Set up JDK 8
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v4
         with:
-          java-version: 1.8
-      - name: Maven Package
-        run: mvn -B clean package -DskipTests
-      - name: Maven Verify
-        run: mvn -B clean verify
+          java-version: '8'
+          distribution: 'temurin'
+          cache: 'maven' # 自動快取 ~/.m2/repository，加速後續建置
+
+      # 升級 4：優化 Maven 執行步驟
+      # 原本先 package (-DskipTests) 再 verify 是重複編譯
+      # 直接執行 verify 就會自動涵蓋 compile, test, package 的完整生命週期
+      - name: Run Maven Verify (Compile & Test)
+        run: mvn --batch-mode clean verify
